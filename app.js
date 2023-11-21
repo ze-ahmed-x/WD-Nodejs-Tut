@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 app = express();
 
 // connect to mongoDB
-const dbURI = "mongodb+srv://ahmed:test1234@cluster0.eicozng.mongodb.net/node-tuts?retryWrites=true&w=majority";
+const dbURI = "mongodb+srv://<username>:<password>@cluster0.eicozng.mongodb.net/node-tuts?retryWrites=true&w=majority";
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true}).then((result) => {
     console.log('Connected to DB');
 }).catch((err) => console.log(err));
